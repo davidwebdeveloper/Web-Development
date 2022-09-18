@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+}
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 5px 10px;
+}
+header input {
+  height: 30px;
+  width: 200px;
+  border-radius: 12px;
+  padding-left: 10px;
+}
+#home {
+  background-color: #c0392b;
+  height: 100vh;
+}
+#home ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#home ul li a {
+  text-decoration: none;
+  color: white;
+}
+#products {
+  height: 100vh;
+  background-color: #27ae60;
+  padding-top: 70px;
+}
+#service {
+  height: 100vh;
+  padding-top: 70px;
+  background-color: #c0392b;
+}
+#pricing {
+  height: 100vh;
+  background-color: slateblue;
+  padding-top: 70px;
+}
+/* conatact us page design */
+#contact {
+  height: 100vh;
+  padding-top: 70px;
+  background: #4c7ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card {
+  display: flex;
+  height: 450px;
+  width: 450px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact-card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+.contact-card input[type="text"],
+.contact-card input[type="email"] {
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  padding-left: 10px;
+  border: 2px solid #eceef0;
+  outline-color: #4c7ccc;
+}
+.contact-card textarea {
+  width: 100%;
+  margin-top: 20px;
+  text-align: start;
+  border: 2px solid #eceef0;
+  padding-left: 10px;
+  outline-color: #4c7ccc;
+}
+
+.contact-card input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.contact-card input[type="submit"] {
+  width: 100px;
+  height: 45px;
+  color: white;
+  background-color: #4c7ccc;
+  border-radius: 5px;
+  border: none;
+}

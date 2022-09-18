@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #db7227;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  /* display: block; */
+}
+a {
+  display: block;
+  background: yellowgreen;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+li:nth-child(2n) a {
+  transform: rotate(-8deg);
+  background: #dd73fa;
+}
+li:nth-child(3n) a {
+  transform: rotate(10deg);
+  background-color: aquamarine;
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: white;
+}
+p {
+  font-size: 18px;
+}
+li a:hover,
+li a:focus {
+  transform: scale(1.2);
+  transition: 0.5s;
+  z-index: 99;
+  position: relative;
+  box-shadow: ;
+}

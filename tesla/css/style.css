@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/coupe-1374450.jpg);
+  background-size: 100%;
+}
+.main {
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+}
+.menu ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.menu ul li a:hover {
+  color: orangered;
+}
+.model ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+.model ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.model ul li a:hover {
+  color: orangered;
+}
+.menu {
+  line-height: 100px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.model {
+  line-height: 100px;
+  font-size: 20px;
+}
+.logo {
+  text-transform: uppercase;
+  line-height: 100px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.logo span {
+  color: orangered;
+}
+.container {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: end;
+}
+.container button {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 50px;
+  width: 300px;
+}

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: gray;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+}
+.container {
+  background-color: rgb(0, 67, 94);
+  width: 600px;
+  height: 400px;
+  position: relative;
+  z-index: 0;
+}
+.img {
+  background: url(../images/wines-1761613.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  position: absolute;
+  z-index: 2;
+}
+.img:hover {
+  width: 50%;
+}
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+.title {
+  color: rgb(223, 159, 21);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: white;
+}

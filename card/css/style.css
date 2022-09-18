@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+}
+.card {
+  background-color: white;
+  display: flex;
+  width: 750px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.img {
+  min-width: 50%;
+  overflow: hidden;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+.img img:hover {
+  transform: scale(1.5);
+}
+.content {
+  padding: 25px 20px;
+  transition-property: transform;
+  animation-name: david;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes david {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.title {
+  color: darkslategrey;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: bold;
+  text-decoration-color: skyblue;
+}
+.content h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ff4e84;
+}
+.content p {
+  color: #7f7e84;
+  line-height: 25px;
+}
+.footer {
+  display: block;
+  /* background-color: red; */
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  border-top: 1px solid #ecebf3;
+}
