@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        background-color: gray;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        height: 800px;
+      }
+      .box-5 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .box-2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .box-1 {
+        background-color: red;
+      }
+      .box-2 {
+        background-color: blue;
+      }
+      .box-3 {
+        background-color: violet;
+      }
+      .box-4 {
+        background-color: orange;
+      }
+      .box-5 {
+        background-color: skyblue;
+      }
+      .box-6 {
+        background-color: pink;
+      }
+      .box-7 {
+        background-color: darkgoldenrod;
+      }
+      .box-8 {
+        background-color: black;
+      }
+      .box-9 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">box-1</div>
+      <div class="box box-2">box-2</div>
+      <div class="box box-3">box-3</div>
+      <div class="box box-4">box-4</div>
+      <div class="box box-5">box-5</div>
+      <div class="box box-6">box-6</div>
+      <div class="box box-7">box-7</div>
+      <div class="box box-8">box-8</div>
+      <div class="box box-9">box-9</div>
+    </div>
+  </body>
+</html>
