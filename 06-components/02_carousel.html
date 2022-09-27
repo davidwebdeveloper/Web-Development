@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inta", sans-serif;
+        font-size: 16px;
+        color: #c0eb75;
+      }
+      .carousel {
+        width: 800px;
+        background-color: #5f3dc4;
+        margin: 100px auto;
+        border-radius: 8px;
+        padding: 32px;
+        padding-left: 96px;
+        display: flex;
+        gap: 96px;
+        align-items: center;
+        position: relative;
+      }
+      img {
+        height: 220px;
+        width: 250px;
+        transform: scale(1.5);
+        border-radius: 8px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      }
+      .text {
+        font-size: 18px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+      .text-author {
+        font-size: 14px;
+      }
+      .text-job {
+        font-size: 12px;
+      }
+      .btn {
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #5f3dc4;
+        cursor: pointer;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .btn-left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn-right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 45px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        border: 2px solid #5f3dc4;
+      }
+      .dot-fill {
+        background-color: #5f3dc4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img
+        src="images/child-play-in-the-sea.jpg"
+        alt="children play in the sea"
+      />
+      <blockquote class="text-container">
+        <p class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+          quam tempora illum expedita vitae ipsum, quis, nulla velit ad quia
+          fugit nobis tenetur, sed reprehenderit. Illo beatae doloremque
+          voluptate itaque. ?
+        </p>
+        <p class="text-author">David Maria Jebamalai</p>
+        <p class="text-job">Full Stack Developer</p>
+      </blockquote>
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot-fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+    l
+  </body>
+</html>
