@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /* width: 800px; */
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        /* margin: 100px auto; */
+        /* border: 1px solid black; */
+        width: 800px;
+        margin-top: 100px;
+        border-collapse: collapse;
+      }
+      thead th {
+        background-color: #087f5b;
+        width: 25%;
+        color: #fff;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+      td,
+      th {
+        padding: 16px 24px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Base</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80 cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100 cm</td>
+          <td>110 cm</td>
+          <td>90 cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70 cm</td>
+          <td>65 cm</td>
+          <td>60 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>60 kg</td>
+          <td>22 kg</td>
+          <td>80 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
