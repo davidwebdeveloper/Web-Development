@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 10px;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/new-year-man.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.count-down {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+.heading-count {
+  font-size: 1.8rem;
+}
+.new-year {
+  font-family: "Inspiration", sans-serif;
+  font-size: 6.4rem;
+}
+.count-number {
+  font-size: 3.2rem;
+}
+small {
+  font-size: 1.2rem;
+}
