@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: black; */
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.range {
+  padding: 10px;
+}
+.guessPara {
+  font-size: 48px;
+  margin-bottom: 32px;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  padding: 24px 48px;
+}
+.again {
+  padding: 12px 24px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+
+  display: inline-block;
+}
